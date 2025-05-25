@@ -15,6 +15,6 @@ scripts-and-utilities/
 
 1. **Clone the repo**:  
    ```sh
-   git clone https://github.com/your-username/scripts-and-utilities.git  
-   cd scripts-and-utilities  
+   git clone git@github.com:lacksinho/scripts.git
+   cd scripts
 
