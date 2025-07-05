@@ -26,13 +26,16 @@
 # Author: Lackson David
 ###############################################################################
 
+# Outputs
+# Cleaned datasets: demo_ds (demographics), clinical_ds (clinical variables), other_comm_ds (comorbidities).
+
 
 library(tidyverse)
 
 
 
 # read csv
-dataset = read.csv("uiso_dataset.csv", stringsAsFactors = TRUE, na.strings = "")
+dataset = read.csv("dataset.csv", stringsAsFactors = TRUE, na.strings = "")
 
 
 
@@ -258,8 +261,3 @@ other_comm_ds <- dataset %>%
   ) %>% 
   
   select(Other_commorbidities:Drugs_name)
-
-
-# Outputs
-# Cleaned datasets: demo_ds (demographics), clinical_ds (clinical variables), other_comm_ds (comorbidities).
-
